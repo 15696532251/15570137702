@@ -27,6 +27,10 @@ from .example_strategy import (
     BollingerMeanReversion,
     RSIMomentum,
 )
+from .web3_config import CHAINS, V3_FEE_LOW, V3_FEE_MEDIUM, V3_FEE_HIGH
+from .web3_wallet import Web3Wallet
+from .web3_data import OnChainPriceFeed, BarBuilder
+from .web3_broker import Web3Broker, Web3LiveTrader, SwapResult
 
 __all__ = [
     "MarketDataFeed",
@@ -46,4 +50,15 @@ __all__ = [
     "MACDStrategy",
     "BollingerMeanReversion",
     "RSIMomentum",
+    # Web3
+    "CHAINS",
+    "V3_FEE_LOW",
+    "V3_FEE_MEDIUM",
+    "V3_FEE_HIGH",
+    "Web3Wallet",
+    "OnChainPriceFeed",
+    "BarBuilder",
+    "Web3Broker",
+    "Web3LiveTrader",
+    "SwapResult",
 ]
